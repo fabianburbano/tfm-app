@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <CrudTfm/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CrudTfm from './components/CrudTfm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CrudTfm
   }
 }
 </script>
@@ -23,4 +24,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.w100, .w100 input {
+    width: 100% !important;
+}
+
+
 </style>
